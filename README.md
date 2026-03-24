@@ -60,3 +60,20 @@
 
 - One of the cases is a redirect, which sets the status code in the response to 301 and manually changes the URL for the user with
   res.setHeader("Location", "/destination");
+
+## to run project
+
+- Must have node.js installed
+
+- Navigate to the same directory as index.js
+
+- run the server file with command "node index.js"
+
+- make requests through the localhost:8080 through the browser. Change the link to check routing and responses.
+
+Ex:
+localhost:8080 = index.html
+localhost:8080/about = about.html
+localhost:8080/contact-me = contact-me.html
+localhost:8080/fjweiowej = 404.html
+localhost:8080/contact = redirect to /contact-me
