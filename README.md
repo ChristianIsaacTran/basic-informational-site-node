@@ -104,3 +104,8 @@ node --watch app.js
 - Express also simplifies the redirects with specific paths with .redirect().
 
 - Express also automatically infers from the data itself, so it (sometimes) automatically creates response headers for me.
+
+- Express can send a lot of things through .send(), but .sendFile()
+requires the use of absolute paths. We can bypass this absolute path requirement if we pass a second argument to .sendFile() that defines a root to base a relative path off of. We can get the defined root by using the commonJS global variable of __dirname (which I used in app.js).
+
+ex: res.sendFile("./relativeFilepath", {root: __dirname});
