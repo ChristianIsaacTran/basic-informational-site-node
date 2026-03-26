@@ -82,3 +82,25 @@ localhost:8080/contact-me = contact-me.html
 localhost:8080/fjweiowej = 404.html
 
 localhost:8080/contact = redirect to /contact-me
+
+## Update for express
+
+Came back to this project after "intro to express" lesson and made a separate file that
+refactors the original index.js server code into express commonJS server code in app.js.
+
+note: the reason why commonJS is used specifically is to allow the use of the global variables:
+\_\_filename : which returns the absolute filepath including the current filename
+
+\_\_dirname : which returns the absolute filepath, excluding the current filename
+
+Also learned about the automatic refreshing CLI --watch flag. When running the project for express, run command:
+
+node --watch app.js
+
+## express notes
+
+- Express framework comes packed with a bunch of built-in code that makes setting up a server and request handlers a lot easier with the use of app.get(), app.use(), etc.
+
+- Express also simplifies the redirects with specific paths with .redirect().
+
+- Express also automatically infers from the data itself, so it (sometimes) automatically creates response headers for me.

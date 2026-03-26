@@ -1,5 +1,8 @@
-import http from  "node:http";
-import fs from "node:fs";
+// import http from  "node:http";
+// import fs from "node:fs";
+
+const http = require("node:http");
+const fs = require("node:fs");
 
 
 /* 
